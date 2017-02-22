@@ -99,13 +99,15 @@ $ pod init
 
 To integrate SwiftyStrava into your Xcode project using CocoaPods, add these lines into your `Podfile` target
 
-*pod 'AlamofireObjectMapper', '~> 4.0'*
-*pod 'SwiftyStrava', '~> 0.8'*
+```
+pod 'AlamofireObjectMapper', '~> 4.0'
+pod 'SwiftyStrava', '~> 0.8'
+```
 
 The `Podfile` will look like this:
 
-```ogdl
-target 'MyXcodePorject' do
+```Ruby
+target 'MyXcodeProject' do
   use_frameworks!
   
   pod 'AlamofireObjectMapper', '~> 4.0'
