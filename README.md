@@ -91,14 +91,29 @@ $ sudo gem install cocoapods
 ```
 Please refer to [official guide](https://guides.cocoapods.org/using/getting-started.html#installation) for more installation instructions.
 
-To integrate SwiftyStrava into your Xcode project using CocoaPods, put these lines into your `Podfile`:
+Next, create `Podfile` by running the command from your Xcode project folder:
 
-```ogdl
-pod 'AlamofireObjectMapper', '~> 4.0'
-pod 'SwiftyStrava', '~> 0.8'
+```bash
+$ pod init
 ```
 
-Run `pod install` to fetch dependencies.
+To integrate SwiftyStrava into your Xcode project using CocoaPods, add these lines into your `Podfile` target
+
+*pod 'AlamofireObjectMapper', '~> 4.0'*
+*pod 'SwiftyStrava', '~> 0.8'*
+
+The `Podfile` will look like this:
+
+```ogdl
+target 'MyXcodePorject' do
+  use_frameworks!
+  
+  pod 'AlamofireObjectMapper', '~> 4.0'
+  pod 'SwiftyStrava', '~> 0.8'
+end
+```
+
+Finally, run `pod install` to fetch dependencies. From now on use '.xcworkspace' file for your project.
 
 ## Usage
 
